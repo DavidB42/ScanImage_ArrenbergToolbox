@@ -3,12 +3,12 @@ ScanImage addons of the Arrenberg Lab
 
 # TCP Communication Protocol Layout
 
--------------------------------------
 | byte 0-7 | byte  8-15 | byte 16-X |
--------------------------------------
+|----------|------------|-----------|
 | data typ |  data len  |   data    |
-| *communication code*  |  *data*   |
--------------------------------------
+| *com code* |*com code*|   *data*  |
+   -
+
 
 data type (int64):
 - 10: data is acquisition meta data (json)
